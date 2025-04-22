@@ -1,0 +1,54 @@
+<div class="container justify-content-center">
+    <h2><strong><em>Plan Your Trip</em></strong></h2>
+    <span><small class="text-muted">Dil Toh Roaming Hai</small></span>
+</div>
+<br>
+<div class="container container-fluid shadow-lg" id="package-container">
+    <div class="row">
+        <div class="col-md-4 mx-auto my-5" *ngFor="let x of packages">
+        <div class="card">
+          <div class="image">
+            <img src="{{x.image}}" alt="No Image">
+          </div>
+          <div class="title">
+            <p><strong>{{x.name}}</strong></p>
+          </div>
+          <div class="details">
+           <p>Days - {{x.days}} </p>
+           <p>Price - {{x.price}} </p>
+          </div>  
+          <div class="select">
+            <button class="btn btn-primary" (click)="book(x.id)" >Book Now</button>
+          </div>
+          
+        </div>
+      </div>  
+    </div>
+
+</div>
+<div class="container container-fluid shadow-lg" id="package-container">
+  <h3><strong>Newly Added Packages</strong></h3>
+    <div class="row">
+        <div class="col-md-4 mx-auto my-5" *ngFor="let x of items">
+        <div class="card">
+          <div class="image">
+            <img src="{{x.image}}" alt="No Image">
+          </div>
+          <div class="title">
+            <p><strong>{{x.PackageName}}</strong></p>
+          </div>
+          <div class="details">
+           <p>Package Id - {{x.PackageId}}</p>
+           <p>Days - {{x.Days}} </p>
+           <p>Price - {{x.Price}} </p>
+          </div>  
+          <div class="select">
+            <button class="btn btn-primary" (click)="book(x.PackageId)" >Book Now</button>
+          </div>
+          
+        </div>
+      </div>  
+    </div>
+
+</div>
+

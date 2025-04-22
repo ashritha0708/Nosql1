@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-3 mb-3 shadow-lg p-3 ">
+                <h3 style="text-align: center; color: green;">Welcome To Signup Page</h3>
+                <hr>
+                <div [ngClass]="getClassName()" role="alert">
+                    {{message}} 
+                  </div>
+                <form [formGroup]="form" class="text-left">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" formControlName="FullName" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Id</label>
+                        <input [email]="true" type="email" formControlName="EmailId" class="form-control" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group ">
+                        <label>Password</label>
+                        <input type="password" formControlName="password" class="form-control" placeholder="******">
+                    </div>
+                    <div class="form-group ">
+                        <label>Confirm Password</label>
+                        <input type="text" formControlName="confirm" class="form-control" placeholder="******">
+                    </div>
+                    <button class="btn btn-danger btn-block mt-3" (click)="signup()">Create Account</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->

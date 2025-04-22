@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-3 mb-3 shadow-lg p-3 ">
+                <h3 style="text-align: center; color: blue;">Delete Package</h3>
+                <hr>
+                <form [formGroup]="form" class="text-left">
+                    <div class="form-group">
+                        <label>Package Id</label>
+                        <input type="number" formControlName="PackageId" class="form-control" readonly>
+                    </div>
+                    <button class="btn btn-danger btn-block mt-3" (click)="removePackage()">Confirm</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
