@@ -29,6 +29,7 @@ router.post('/signup', (req, res) => {
 });
 
 router.post('/login', (req, res) => {
+    console.log('🚀 Login route hit:', req.body);
     User.find({EmailId: req.body.EmailId})
     .exec()
     .then((result) => {

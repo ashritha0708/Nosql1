@@ -26,11 +26,12 @@ mongoose.connect(
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// CORS: allow frontend URL
+
 app.use(cors({
-  origin: 'https://7302e559.nosql1.pages.dev',
-  credentials: true,
-}));
+    origin: 'https://nosql1.pages.dev', // <- frontend URL
+    credentials: true // only if needed
+  }));
+  
 
 // Routes
 app.use('/auth', authRoute);
