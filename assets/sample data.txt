@@ -1,0 +1,24 @@
+
+PackageId
+13
+PackageName
+"Kolkata"
+Days
+"9 days 8 nights"
+Price
+20000
+image
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfT2TFj6CRMQF90J…"
+
+
+
+PackageId
+12
+PackageName
+"Dandeli"
+Days
+"3 days 2 nights"
+Price
+5000
+image
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPbK5m90-CW8D52B…"
