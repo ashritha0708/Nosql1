@@ -13,7 +13,6 @@ export class SharedPackagesService {
     {id:3, name: "Goa",         price : 6000,days: "3 Days & 2 Nights", image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC3BMY9dnUXHx4-26L4hECnXhFU4n9WqTRxw&usqp=CAU"},
     {id:4, name: "Maldives",    price : 40000,days: "5 Days & 4 Nights", image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSApGW15TLzo92fxUNXW80CBhBUfZOmqD5jsw&usqp=CAU" },
     {id:5, name: "Tirupathi",   price : 10000,days: "4 Days & 3 Nights", image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEEh5dYrIiZUE742S1gqUzcSYbMKIvAEFp4w&usqp=CAU" },
-    {id:6, name: "Spiti Valley",price : 25000,days: "6 Days & 5 Nights", image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9o4kVtvqy-0cTLqQr5Vru2ssRmVN6AoyBbhZDrtgjFl6Y333qgwW5TWgqLrk8y8EFqU&usqp=CAU" },
   ]
   
   id:number | undefined;
