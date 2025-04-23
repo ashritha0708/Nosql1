@@ -1,5 +1,5 @@
-<h2>Submit Feedback</h2>
-<form (ngSubmit)="submitFeedback()">
+<h2 class="title">Submit Feedback</h2>
+<form (ngSubmit)="submitFeedback()" #form="ngForm">
   <label for="user">User</label>
   <select id="user" name="userId" [(ngModel)]="feedback.userId" required>
     <option *ngFor="let user of users" [value]="user._id">{{ user.email }}</option>
