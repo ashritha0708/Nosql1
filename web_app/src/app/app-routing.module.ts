@@ -25,9 +25,9 @@ const routes: Routes = [
   {path:'create', component:CrudCreateComponent},
   {path:'edit/:id', component:CrudEditComponent},
   {path:'delete/:id', component:CrudDeleteComponent},
-  {path:'**', component:LoginComponent},
   {path: 'feedback', component: FeedbackComponent },
-  {path: 'destinations', component: DestinationComponent }
+  {path: 'destinations', component: DestinationComponent },
+  {path:'**', component:LoginComponent},
 ];
 
 @NgModule({
