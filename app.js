@@ -5,8 +5,6 @@ const port = process.env.PORT || 8080;
 const authRoute = require('./routes/auth-route');
 const bookRoute = require('./routes/booking-route');
 const CRUDroute = require('./routes/CRUD-route');
-const feedbackRoute = require('./routes/feedback-route');
-const destinationRoute = require('./routes/destination-route');
 
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -39,8 +37,6 @@ app.use(cors({
 app.use('/auth', authRoute);
 app.use('/book', bookRoute);
 app.use('/crud', CRUDroute);
-app.use('/feedback', feedbackRoute);
-app.use('/destination', destinationRoute);
 
 
 // Base route
