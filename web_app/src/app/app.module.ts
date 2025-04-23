@@ -19,6 +19,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { CrudCreateComponent } from './crud-create/crud-create.component';
 import { CrudEditComponent } from './crud-edit/crud-edit.component';
 import { CrudDeleteComponent } from './crud-delete/crud-delete.component';
+import { FormsModule } from '@angular/forms';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -34,14 +36,16 @@ import { CrudDeleteComponent } from './crud-delete/crud-delete.component';
     AdminDashboardComponent,
     CrudCreateComponent,
     CrudEditComponent,
-    CrudDeleteComponent
+    CrudDeleteComponent,
+    FeedbackComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MdbCollapseModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
