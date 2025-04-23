@@ -10,8 +10,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { CrudCreateComponent } from './crud-create/crud-create.component'
 import { CrudEditComponent } from './crud-edit/crud-edit.component'
 import { CrudDeleteComponent } from './crud-delete/crud-delete.component'
-import { FeedbackComponent } from './feedback/feedback.component';
-import { DestinationComponent } from './destination/destination.component';
+
 
 
 const routes: Routes = [
@@ -25,9 +24,7 @@ const routes: Routes = [
   {path:'create', component:CrudCreateComponent},
   {path:'edit/:id', component:CrudEditComponent},
   {path:'delete/:id', component:CrudDeleteComponent},
-  {path: 'feedback', component: FeedbackComponent },
-  {path: 'destinations', component: DestinationComponent },
-  {path:'**', component:LoginComponent},
+  {path:'**', component:LoginComponent}
 ];
 
 @NgModule({

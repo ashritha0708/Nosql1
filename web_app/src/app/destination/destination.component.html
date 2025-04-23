@@ -1,7 +1,0 @@
-<div *ngFor="let dest of destinations" class="destination-card">
-    <h3>{{ dest.name }} ({{ dest.country }})</h3>
-    <p>{{ dest.description }}</p>
-    <p>Created By: {{ dest.createdBy?.email }}</p>
-    <img *ngFor="let img of dest.images" [src]="img" alt="Destination image" width="150">
-  </div>
-  

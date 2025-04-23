@@ -2,13 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { CRUDpackageService } from '../services/CRUDpackage/crudpackage.service'
 import { Package } from '../services/CRUDpackage/package.model'
-import { FeedbackService } from '../services/feedback/feedback.service';
 
 @Component({
   selector: 'app-admin-dashboard',
   templateUrl: './admin-dashboard.component.html',
-  styleUrls: ['./admin-dashboard.component.scss'],
-  providers: [CRUDpackageService,FeedbackService]
+  styleUrls: ['./admin-dashboard.component.scss']
 })
 export class AdminDashboardComponent implements OnInit {
 
@@ -17,18 +15,16 @@ export class AdminDashboardComponent implements OnInit {
 
   constructor(
     private router:Router,
-    private crud:CRUDpackageService,
-    private feedbackService: FeedbackService
+    private crud:CRUDpackageService
+   
     ) { }
 
   ngOnInit(): void {
     this.crud.retrieve().subscribe((data: any[]) =>{
       this.items = data;
       this.crud.packages = data as Package[];
-     });
-     this.feedbackService.getFeedbacks().subscribe(data => {
-      this.feedbacks = data;
-    });
+     })
+   
   }
 
   adminlogout() {

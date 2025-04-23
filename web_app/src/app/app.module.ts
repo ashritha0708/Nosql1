@@ -20,7 +20,6 @@ import { CrudCreateComponent } from './crud-create/crud-create.component';
 import { CrudEditComponent } from './crud-edit/crud-edit.component';
 import { CrudDeleteComponent } from './crud-delete/crud-delete.component';
 import { FormsModule } from '@angular/forms';
-import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +35,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     AdminDashboardComponent,
     CrudCreateComponent,
     CrudEditComponent,
-    CrudDeleteComponent,
-    FeedbackComponent,
+    CrudDeleteComponent
   ],
   imports: [
     BrowserModule,
